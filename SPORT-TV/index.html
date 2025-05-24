@@ -6,6 +6,8 @@
     <link rel="icon" href="1.jpeg">
     <title>SPORT TV - Furahia Mpira, Tamthilia, Magazeti na Tetesi za Soka</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <style>
         /* Custom CSS */
         body {
@@ -29,17 +31,20 @@
             right: 40px;
             background-color: #25d366;
             color: #FFF;
-            border-radius: 50px;
+            border-radius: 50%;
             text-align: center;
             font-size: 30px;
-            box-shadow: 2px 2px 3px #999;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             z-index: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
         }
         .whatsapp-float:hover {
             background-color: #128C7E;
-        }
-        .whatsapp-icon {
-            margin-top: 15px;
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
     </style>
 </head>
@@ -65,11 +70,13 @@
 </div>
 
 <!-- WhatsApp floating button -->
-<a href="https://wa.me/255679901651" class="whatsapp-float" target="_blank">
-    <i class="fab fa-whatsapp whatsapp-icon"></i>
+<a href="https://wa.me/255679901651" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+    <i class="bi bi-whatsapp"></i>
 </a>
 
-<!-- Font Awesome for WhatsApp icon -->
-<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
